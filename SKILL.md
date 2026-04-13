@@ -65,7 +65,6 @@ python skills/feishu_create_doc/scripts/create_doc.py "~/文档/笔记.md" "fldx
 
 ## 参数说明
 
-- **folder_token**：飞书文件夹 ID，省略则默认上传到「学习」文件夹（见下方备注）
+- **folder_token**：飞书文件夹 ID，省略则上传到默认文件夹（见下方备注）
 - **title**：文档标题，省略则从 MD 文件的 frontmatter 或第一个 `#` 标题自动提取
 
-> **备注**：默认「学习」文件夹的飞书文件夹 ID 及 MD 文件的本地搜索路径属于用户个性化配置，存放于 MEMORY.md 中，脚本自动读取，无需在 SKILL.md 中公开。
