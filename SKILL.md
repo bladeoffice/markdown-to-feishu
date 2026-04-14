@@ -1,9 +1,10 @@
 ---
 name: markdown-to-feishu
-description: 将 Markdown 文件（含本地图片）发布为飞书文档。当用户要求将 md/markdown 文档上传、发布、创建到飞书时使用。支持自动解析 frontmatter 标题、标题层级、列表、代码块、表格、图片（本地图片自动上传）。默认上传到「学习」文件夹。
+description: 将 Markdown 文件（含本地图片）发布为飞书文档。当用户要求将 md/markdown 文档上传、发布、创建到飞书时使用。支持自动解析 frontmatter 标题、标题层级、列表、代码块、表格、图片（本地图片自动上传）。默认上传到飞书的缺省文件夹。
+homepage: https://gitcode.com/bladeoffice/markdown-to-feishu
 ---
 
-# feishu_create_doc
+# markdown-to-feishu
 
 将 Markdown 文件发布为飞书在线文档。
 
@@ -17,16 +18,16 @@ FEISHU_APP_SECRET  # 飞书应用 app_secret
 ## 使用方式
 
 ```bash
-python skills/feishu_create_doc/scripts/create_doc.py <md_file> [folder_token] [title]
+python skills/markdown-to-feishu/scripts/create_doc.py <md_file> [folder_token] [title]
 ```
 
 **示例：**
 ```bash
 # 上传到「学习」文件夹
-python skills/feishu_create_doc/scripts/create_doc.py "~/文档/笔记.md"
+python skills/markdown-to-feishu/scripts/create_doc.py "~/文档/笔记.md"
 
 # 上传到指定文件夹
-python skills/feishu_create_doc/scripts/create_doc.py "~/文档/笔记.md" "fldxxxxxx" "自定义标题"
+python skills/markdown-to-feishu/scripts/create_doc.py "~/文档/笔记.md" "fldxxxxxx" "自定义标题"
 ```
 
 ## 工作流程
